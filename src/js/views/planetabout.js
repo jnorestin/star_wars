@@ -12,7 +12,7 @@ const Planetabout = () => {
     return (
         <div>
             <div>
-                <img src={`https://starwars-visualguide.com/assets/img/planets/${planet + 1}.jpg`}
+                <img src={`https://starwars-visualguide.com/assets/img/planets/${planet+ 1}.jpg`}
                 onError={(e) => {    e.target.src = 'https://starwars-visualguide.com/assets/img/placeholder.jpg'                   }}> 
                 </img>
                 <p>

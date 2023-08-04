@@ -7,6 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
+
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import About from "./views/about";
@@ -24,13 +25,14 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
-						<Route path="*" element={<h1>Not found!</h1>} />
-						<Route path="/about/:id" element={<About />} />
-						<Route path="/planetabout/:id" element={<Planetabout />} />
-					</Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/demo" element={<Demo />} />
+  <Route path="/single/:theid" element={<Single />} />
+  <Route path="/about/:id" element={<About />} />
+  <Route path="/planetabout/:id" element={<Planetabout />} />
+  <Route path="*" element={<h1>Not found!</h1>} /> {/* This should be last */}
+</Routes>
+
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
